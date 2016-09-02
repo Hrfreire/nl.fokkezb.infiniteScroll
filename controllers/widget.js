@@ -69,8 +69,8 @@ function init(parent) {
 
 function mark() {
   if (list) {
-    if(!_.isUndefined(parentSymbol.sectionCount) && parentSymbol.sectionCount > 0) {
-      var sectionIndex = parentSymbol.sectionCount - 1;
+    if(!_.isUndefined(parentSymbol.sections.length) && parentSymbol.sections.length > 0) {
+      var sectionIndex = parentSymbol.sections.length - 1;
       var itemIndex = Math.max(parentSymbol.sections[sectionIndex].items.length - 1);
 
       if (sectionIndex + itemIndex > 0) {
